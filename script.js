@@ -74,3 +74,11 @@ if (motionVideos.length && 'IntersectionObserver' in window) {
   }), {threshold:[0,.35,.7]});
   motionVideos.forEach(video => videoObserver.observe(video));
 }
+
+
+// Reliable footer back-to-top control
+const backTop = document.querySelector('.back-top');
+backTop?.addEventListener('click', (event) => {
+  event.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});

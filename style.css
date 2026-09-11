@@ -31,3 +31,11 @@
 .reel-video-cards{align-items:start}
 @media(max-width:1000px){.reel-embed-wrap{aspect-ratio:16/10}.vertical-frame{height:510px!important}.reel-video-cards{grid-template-columns:1fr}.film-bg-video{object-position:52% center}}
 @media(max-width:560px){.reel-embed-wrap{aspect-ratio:16/11}.vertical-frame{height:500px!important}.video-label{left:12px;bottom:12px;font-size:7px}}
+
+/* Floating WhatsApp + working back-to-top */
+.back-top{appearance:none;border:0;background:none;color:inherit;font:inherit;font-size:9px;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;padding:0;text-align:left}
+.back-top:hover{text-decoration:underline;text-underline-offset:6px}
+.whatsapp-float{position:fixed;right:24px;bottom:24px;z-index:80;display:flex;align-items:center;gap:9px;height:54px;padding:0 17px 0 12px;border:1px solid rgba(255,255,255,.16);border-radius:999px;background:rgba(18,17,15,.92);color:#f4f0e8;box-shadow:0 12px 40px rgba(0,0,0,.28);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);font-size:9px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;transition:transform .3s ease,background .3s ease,border-color .3s ease}
+.whatsapp-float:hover{transform:translateY(-4px);background:#171512;border-color:rgba(255,255,255,.3)}
+.wa-icon{width:31px;height:31px;border-radius:50%;display:grid;place-items:center;background:#e9e4da;color:#171512;line-height:1}.wa-icon svg{width:19px;height:19px;display:block;fill:currentColor}
+@media(max-width:560px){.whatsapp-float{right:14px;bottom:14px;height:50px;padding-right:14px}.wa-text{font-size:8px}.wa-icon{width:29px;height:29px}.back-top{font-size:8px}}
